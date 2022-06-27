@@ -2,7 +2,7 @@
 
 Entity Framework 6 da Generic Repository Patterndan foydalanish.
 
-**Generic haqida tushuncha:**
+### Generic haqida tushuncha:
 
 .Net 2.0 dan boshlab Genericlardan foydalanish imkoniyati qo’shildi. Generic yordamida ixtiyoriy tipda ishlovchi(ixtiyoriy tipga moslashuvchi) metod yoki class yaratish mumkin. Bunda class yoki metod tipi uchun maxsus shablon belgisi — «T» dan foydalaniladi. Kompilyator har bir tipga mos shu tipdagi metod yoki classni generatsiya qiladi. Generic dan foydalanish uchun “using” bo’limiga using System.Collections.Generic; ni qo’shish lozim.
 
@@ -74,7 +74,7 @@ Dasturni ishga tushirgach quyidagi natijani olishimiz mumkin:
 0 5 10 15 20
 N o s i r b e k
 
-Generic metodlar:
+### Generic metodlar:
 Generic yordamida universal tip parametriga ega bo’lgan metod yaratishimiz mumkin
 Masalan:
 2)
@@ -110,7 +110,7 @@ namespace GenericTest1
 Natija:
 
 
-Generic Repository Pattern:
+### Generic Repository Pattern:
 1) Yangi Consule Application yaratamiz va unda “Models” deb nomlangan papka hosil qilamiz. Uning ichiga Person.cs nomli classni qo’shamiz.
 
 `Pesron.cs:`
@@ -136,7 +136,7 @@ namespace EntityCrudApp2.Model
 
 ```
 
-2) Proyekt ichida “Repository” papkasini hosil qilamiz va unga “IMyRepository” interfeysini va “MyRepository” classini qo’shamiz.
+### 2) Proyekt ichida “Repository” papkasini hosil qilamiz va unga “IMyRepository” interfeysini va “MyRepository” classini qo’shamiz.
 
 `IMyRepository.cs:`
 
@@ -294,7 +294,7 @@ namespace EntityCrudApp2.Repository
 }
 ```
 
-Modelga mos jadvallani hosil qilish uchun qo’shimcha Configuration.cs classini hozil qilamiz. Buning uchun proyektga “Migrations” nomli papka qo’shamiz.
+### Modelga mos jadvallani hosil qilish uchun qo’shimcha Configuration.cs classini hozil qilamiz. Buning uchun proyektga “Migrations” nomli papka qo’shamiz.
 
 `Configuration.cs:`
 
@@ -328,7 +328,7 @@ _“app.config”_ faylida Dbga bog’lanish uchun kerak bo’ladigan connection
 
 ```
 
-Proyektda DB deb nomlangan papka hosil qilamiz va uning ichiga DbConfig.cs va DBContext.cs classlarini qo’shamiz:
+### Proyektda DB deb nomlangan papka hosil qilamiz va uning ichiga DbConfig.cs va DBContext.cs classlarini qo’shamiz:
 
 `DbConfig.cs:`
 
@@ -386,7 +386,7 @@ namespace EntityCrudApp2.DB
 }
 ```
 
-Endi yaratilgan Repositorydan foydalanib bazada model bo’yicha jadvalni hosil qilish va unda CRUD(Create, Read, Update, Delete) amallarini bajarishimiz mumkin:
+### Endi yaratilgan Repositorydan foydalanib bazada model bo’yicha jadvalni hosil qilish va unda CRUD(Create, Read, Update, Delete) amallarini bajarishimiz mumkin:
 
 `Program.cs:`
 
